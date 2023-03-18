@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="recpwrd.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <title>LOGIN</title>
+    <title>Recovery</title>
 </head>
 <body>
     <form action="cadastro.html" method="get" autocomplete="on">
-        <h1>Login</h1>
-        <p><label for="login">Username</label>:<input type="text" name="login" id="login" required autocomplete="username" maxlength="12"></p>
-        <p><label for="senha">Password</label>:<input type="password" name="senha" id="senha" required autocomplete="off" minlength="8" maxlength="15"></p>
-        <a href="frgtpwrd.html">Forgot my password</a>
-        <input type="submit" value="Enter" id="botao">
+        <fieldset>
+            <legend>Password Recovery</legend>
+            <p><label for="email">Email</label>: <input type="email" name="email" id="email"></p>
+            <p>or</p>
+            <p><label for="tel">Pohne Number</label>: <input type="tel" name="tel" id="tel" max="11" autocomplete="tel"  pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="(xx) xxxxx-xxxx"></p>
+            <input type="submit" value="Submit" id="botao" >
+        </fieldset>
         <img src="imagens/ghost.png" alt="fantasma" id="ghost">
         <img src="imagens/bat.png" alt="morcegos" id="bat">
         <img src="imagens/gato.png" alt="gato" id="cat">

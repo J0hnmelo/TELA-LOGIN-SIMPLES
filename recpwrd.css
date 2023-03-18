@@ -16,7 +16,7 @@ body{
     background-position: center;
     background-size: cover;
 }
-form {
+fieldset {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -30,30 +30,29 @@ form {
     background-image: linear-gradient(244grad, #afa4ea00 1%,#3416cacc 97%,#5e34df 2%);
 }
 
-form > p {
+form > fieldset >p {
     font-size: 1.1em;
     font-family: start;
     margin: 0px;
     border-radius: 10px;
     position: relative;
-    top: 35%;
+    top: 22%;
     left: -120px;
     margin-bottom: 50px;
     box-sizing: border-box;
     text-shadow: 1px 1px 1px #FE6516;
 }
-#login {
+#email {
    border-radius: 10px;
    border: 2px solid yellowgreen;
 }
-#senha {
+#tel {
     border-radius: 10px;
    border: 2px solid yellowgreen;
 }
 #botao {
     position: relative;
-    top: 120px;
-    left: 7%;
+    top: 100px;
     font-family: start;
     border-radius: 20px;
     padding: 10px;
@@ -73,56 +72,33 @@ input {
     text-align: center;
     margin-bottom: 20px;
     position: absolute;
-    top: -1px;
+    top: -2px;
 }
 
-h1 {
+legend {
     font-family: start;
     font-weight: lighter;
-    font-size: 2.5em;
+    font-size: 1.7em;
     text-shadow: 1px 1px 1px #FE6516, -1px -1px 1px #FE6516;
-    position: absolute;
-    left: 32%;
-    top: 10%;  
+    text-align: center;
 }
 
 #ghost {
     position: absolute;
-    left: 76%;
-    top: 72%;
+    left: 29%;
+    top: 30%;
     mix-blend-mode: multiply;
 }
 #bat {
     mix-blend-mode: multiply;
     position: absolute;
-    left: 5%;
-    top: -5%;
-    width: 120px;
-    height: 120px;
-}
-a {
-    position: absolute;
-    top: 80%;
-    left: 30%;
-    font-family: start;
-    font-size: 0.7em;
-    text-decoration: none;
-    color: black;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: yellowgreen;
-    border: 2px solid;
-    border-color: #FE6516;
-}
-a:hover {
-    border: 1px solid red;
-    transform: scale(1.1);
-    background-image: linear-gradient(20grad, rgba(0, 0, 139, 0.959), rgba(43, 226, 73, 0.712));
-    transition: .3s;
+    left: 15%;
+    top: 4%;
+    width: 200px;
+    height: 180px;
 }
 #cat {
-    mix-blend-mode: multiply;
     position: relative;
-    left: 83%;
-    top: 157px;
+    left: 79%;
+    top: 434px;
 }
