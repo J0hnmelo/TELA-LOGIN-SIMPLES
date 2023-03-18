@@ -4,116 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
     <title>TESTE DE FORMULARIO</title>
-    <style>
-        @font-face {
-            font-family: start;
-            src: url(fontes/PressStart2P-Regular.ttf) format(truetype);
-        }
-        * {
-            margin: 0;
-            border: 0;
-            padding: 0;
-        }
-        body{
-            width: 100vw;
-            height: 100vh;
-            background-image: url(imagens/thumb-1920-966310.jpg);
-            background-repeat:no-repeat ;
-            background-position: center;
-            background-size: cover;
-        }
-        form {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border: 3px ridge #FE6516;
-            border-radius: 50px;
-            margin: auto;
-            text-align: center;
-            width: 550px;
-            height: 450px;
-            background-image: linear-gradient(244grad, #afa4ea00 1%,#3416cacc 97%,#5e34df 2%);
-        }
-
-        form > p {
-            font-size: 1.1em;
-            font-family: start;
-            margin: 0px;
-            border-radius: 10px;
-            position: relative;
-            top: 35%;
-            left: -120px;
-            margin-bottom: 50px;
-            box-sizing: border-box;
-            text-shadow: 1px 1px 1px #FE6516;
-        }
-        #login {
-           border-radius: 10px;
-           border: 2px solid yellowgreen;
-        }
-        #senha {
-            border-radius: 10px;
-           border: 2px solid yellowgreen;
-        }
-        #botao {
-            position: relative;
-            top: 150px;
-            font-family: start;
-            border-radius: 20px;
-            padding: 10px;
-            background-color: yellowgreen;
-            border: 2px solid;
-            border-color: #FE6516;
-            cursor: pointer;
-        }
-        #botao:hover {
-            border: 1px solid red;
-            transform: scale(1.1);
-            background-image: linear-gradient(20grad, rgba(0, 0, 139, 0.959), rgba(43, 226, 73, 0.712));
-            transition: .3s;
-        }
-
-        input {
-            text-align: center;
-            margin-bottom: 20px;
-            position: absolute;
-            top: -1px;
-        }
-
-        h1 {
-            font-family: start;
-            font-weight: lighter;
-            font-size: 2.5em;
-            text-shadow: 1px 1px 1px #FE6516, -1px -1px 1px #FE6516;
-            position: absolute;
-            left: 32%;
-            top: 10%;  
-        }
-
-        #ghost {
-            position: absolute;
-            left: 76%;
-            top: 72%;
-            mix-blend-mode: multiply;
-        }
-        #bat {
-            mix-blend-mode: multiply;
-            position: absolute;
-            left: 5%;
-            top: -5%;
-            width: 120px;
-            height: 120px;
-        }
-    </style>
 </head>
 <body>
-    <form action="cadastro.html" method="post" autocomplete="off">
+    <form action="cadastro.html" method="get" autocomplete="on">
         <h1>Login</h1>
-        <p><label for="login">Username</label>:<input type="text" name="login" id="login" required></p>
-        <p><label for="senha">Password</label>:<input type="password" name="senha" id="senha" required></p>
-        <input type="submit" value="Entrar" id="botao">
+        <p><label for="login">Username</label>:<input type="text" name="login" id="login" required autocomplete="username" maxlength="12"></p>
+        <p><label for="senha">Password</label>:<input type="password" name="senha" id="senha" required autocomplete="off" minlength="8" maxlength="15"></p>
+        <a href="#">Forgot my password</a>
+        <input type="submit" value="Enter" id="botao">
         <img src="imagens/ghost.png" alt="fantasma" id="ghost">
         <img src="imagens/bat.png" alt="morcegos" id="bat">
     </form>
