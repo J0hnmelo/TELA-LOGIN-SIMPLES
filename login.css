@@ -120,9 +120,4 @@ a:hover {
     background-image: linear-gradient(20grad, rgba(0, 0, 139, 0.959), rgba(43, 226, 73, 0.712));
     transition: .3s;
 }
-#cat {
-    mix-blend-mode: multiply;
-    position: relative;
-    left: 83%;
-    top: 157px;
-}
+
